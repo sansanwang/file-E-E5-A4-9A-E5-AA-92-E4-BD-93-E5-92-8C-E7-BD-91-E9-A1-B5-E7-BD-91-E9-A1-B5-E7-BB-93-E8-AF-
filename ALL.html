@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+     <meta property="qc:admins" content="14456225576150316375" />
+  
+     <meta property="qc:admins" content="14456225576150316375" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+    <title>全部视频  酷看视频——属于自己的看视频专属频道</title>
+    
+
+  	 <link rel="stylesheet" type="text/css" href="https://resource.dapengjiaoyu.com/dapeng/css/navController.css" />
+
+  <link href="https://resource.dapengjiaoyu.com/assets/libs/gallery2/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/assets/css/common.css" />
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/assets/css/bootstrap-extends.css" />
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/bundles/schoolweb/css/web.css" />
+
+  
+  
+  <!-- 顶部样式  -->
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/css/upDown.css" />
+  
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/dapeng/css/dapeng.css" />
+  
+  <script src="https://resource.dapengjiaoyu.com/js/jquery.min.js"></script>
+  <script src="https://resource.dapengjiaoyu.com/js/main.js"></script>
+  
+  <!-- 顶部样式  -->
+  <script src="https://resource.dapengjiaoyu.com/js/JQscrollTop.js"></script>
+  <script src="https://resource.dapengjiaoyu.com/js/updown.js"></script>
+
+ 
+  
+
+
+
+
+</head>
+<body class="" id="bodyColor" style="background-color:#f0f0f0;">
+
+ <!-- Swiper -->
+ <section class="pc-banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-center none-effect"><a href="剧情/怦然星动.html"><img src="img/怦然星动.jpg" ></a></div>
+            <div class="swiper-slide"><a href="剧情/你好，之华.html"><img src="img/你好，之华.jpg" ></a></div>
+            <div class="swiper-slide"><a href="剧情/影.html"><img src="img/影.jpg" ></a></div>
+            <div class="swiper-slide"><a href="剧情/恶魔少爷别吻我.html"><img src="img/恶魔.jpg" ></a></div>
+            <div class="swiper-slide"><a href="剧情/忽而今夏.html"><img src="img/忽而今夏.jpg" ></a></div>
+        </div>
+        
+    </div>
+    <div class="swiper-pagination"></div>
+	<div class="button">
+     <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div></div>
+</section>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+
+<div class="navbar dp-nav">
+  <div class="container">
+    <div class="container-gap">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          
+      </div>
+      <div class="navbar-collapse collapse dp-collapse">
+		<ul class="nav navbar-nav dp-navbar">
+			<li>
+				<a onfocus="this.blur();" href="HOME PAGE.html" class="active" >
+				  首页
+				</a>
+			</li>
+				<li id="collegeNav">
+					<a></a>
+					<ul class="nav navbar-nav dp-navbar" style="display:none">
+						<li></li>
+					</ul>
+				</li>
+			<li id="mainNav" style="display:none">
+				<a href="VIP.html">
+				  VIP视频
+				</a>
+			</li>
+			<li>
+				<a onfocus="this.blur();" href="ALL.html"  >
+				  全部视频
+				</a>
+			</li>
+			<li>
+				<a onfocus="this.blur();" href="HELP.html"  >
+				  帮助中心
+				</a>
+			</li>
+			<li>
+				<a onfocus="this.blur();" href="ABOUT US.html" target="_blank"   >
+				  关于我们
+				</a>
+			</li>
+  </ul>
+
+        
+  <ul class="nav navbar-nav navbar-right dp-navbar">
+	<li style="margin-top:0px;">
+	<span class="nav navbar-nav search" >
+		<input class="typehead form-control search_input" type="text" placeholder="搜索更多视频" data-role="item-input">
+	<button class="typehead-btn btn search-btn" type="submit" data-role="item-add" onfocus="this.blur();"><i class="typehead-search glyphicon glyphicon-search"></i></button>
+	</span>            
+	<li style="color: #7E7E8C;font-size: 12px;">|</li>
+		<li>
+		<a href="enter.html"">登录</a>
+		</li>
+		<li>
+					<a href="register.html"">注册</a>
+		</li>
+</ul>         
+
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+   $(document).ready(function(){
+   	  $("#collegeNav>a").replaceWith($("#mainNav").html());
+   	  $("#collegeNav>ul>li").html($("#secondNav").html());
+	   	if("temp"!="temp"){
+	   		$("#collegeNav").parent().find("a").removeClass("active");
+	   		$("#collegeNav").find("a").addClass("active");
+	   	}
+      $("#collegeNav").mouseover(function(){
+		  $(this).children("ul").show();
+	  });
+	  $("#collegeNav").mouseout(function(){
+		  $(this).children("ul").hide();
+	  });
+      $(".typehead").click(function(){
+          $(".dp-nav .search").addClass("active");
+      });
+      
+   	  $(".typehead").blur(function(){
+          $(".dp-nav .search").removeClass("active");
+      });
+      
+      $(".typehead, .typehead-btn").hover(function(){
+		  $(".dp-nav .search").addClass("active");
+        },function(){
+		  $(".dp-nav .search").removeClass("active");
+      });
+      
+	  //搜索按钮
+	  $(".search-btn").click(function(){
+	   	var key=$(".search_input").val();
+		var url="/search/course?keyword="+key;
+		location.href=url;
+	  });
+   });
+</script>
+
+<link rel="stylesheet" type="text/css" href="/resources/dapeng/css/dp-base.css" />
+<link rel="stylesheet" type="text/css" href="/resources/dapeng/css/dp-vip.css"/>
+<link rel="stylesheet" type="text/css" href="/resources/dapeng/css/dp-response.css"/>
+<link rel="stylesheet" type="text/css" href="https://blob.dapengjiaoyu.com/2018/04/jghawmku.css"/>
+<script src="https://blob.dapengjiaoyu.com/2018/04/jghaw3u7.js"></script>
+<script>
+    new WOW().init();
+</script>
+<style>
+.dp-nav {
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity: 0.95;
+	position: absolute;
+	width: 100%;
+	padding-top: 5px;
+}
+</style>
+
+		<div class="vip-wrap">
+			<div class="vip-main">
+				<div id="slider" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators" id="c-move">
+								<li data-target="#slider" data-slide-to="0" class="active"></li>
+								<li data-target="#slider" data-slide-to="1" class=""></li>
+								<li data-target="#slider" data-slide-to="2" class=""></li>
+								<li data-target="#slider" data-slide-to="3" class=""></li>
+								<li data-target="#slider" data-slide-to="4" class=""></li>
+								<li data-target="#slider" data-slide-to="5" class=""></li>
+								<li data-target="#slider" data-slide-to="6" class=""></li>
+								<li data-target="#slider" data-slide-to="7" class=""></li>
+					</ol>
+
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+   body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.pc-banner {
+	background: url(images/top_main_bg01.jpg) no-repeat center top/100% auto;
+	width: 100%;
+	float: left;
+}
+
+@media screen and (max-width: 668px) {
+	.pc-banner {
+		background-size: auto 100%;
+	}
+}
+
+.swiper-container {
+	width: 100%;
+	margin: 35px 0;
+}
+
+@media screen and (max-width: 668px) {
+	.swiper-container {
+		margin: 20px 0 15px;
+	}
+}
+
+.swiper-slide {
+	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	-webkit-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+@media screen and (max-width: 668px) {
+	.swiper-slide {
+		-webkit-transform: scale(0.97);
+		transform: scale(0.97);
+	}
+}
+
+.swiper-slide-active,.swiper-slide-duplicate-active {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media screen and (max-width: 668px) {
+	.swiper-slide-active,.swiper-slide-duplicate-active {
+		-webkit-transform: scale(0.97);
+		transform: scale(0.97);
+	}
+}
+
+.none-effect {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+}
+
+.swiper-slide a {
+	background: #fff;
+	padding:10px;
+	display: block;
+	border-radius: 14px;
+}
+
+@media screen and (min-width: 668px) {
+	.swiper-slide a:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		box-sizing: border-box;
+		border: 10px solid #fff;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: url(images/top_slick_cover_bg01.png) 0 0 repeat;
+		border-radius: 20px;
+	}
+}
+
+.swiper-slide-active a:after {
+	background: none;
+}
+
+@media screen and (max-width: 668px) {
+	.swiper-slide a {
+		padding: 5px;
+		border-radius: 7px;
+	}
+}
+
+.swiper-slide img {
+	width: 100%;
+	border-radius: 14px;
+	display: block;
+}
+
+@media screen and (max-width: 668px) {
+	.swiper-slide img {
+		border-radius: 7px;
+	}
+}
+
+.swiper-pagination {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+	background: #00a0e9;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 17px;
+	height: 17px;
+	opacity: 1;
+	margin-bottom: 4px;
+}
+
+.swiper-pagination-bullet-active {
+	width: 13px;
+	height: 13px;
+	background: #FFF;
+	border: 6px solid #00a0e9;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 668px) {
+	
+	.swiper-pagination {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	.swiper-pagination-bullet {
+		background: #00a0e9;
+		margin-left: 2px;
+		margin-right: 2px;
+		width: 8px;
+		height: 8px;
+		margin-bottom: 2px;
+	}
+
+	.swiper-pagination-bullet-active {
+		width: 6px;
+		height: 6px;
+		background: #FFF;
+		border: 3px solid #00a0e9;
+		margin-bottom: 0;
+	}
+}
+
+.button {
+	width: 1000px;
+	margin: 0 auto;
+	bottom: 43px;
+	position: relative;
+}
+
+@media screen and (max-width: 668px) {
+	.button {
+		width: 70%;
+		bottom: 22px;
+	}
+}
+
+.button div:hover {
+	background-color: #2f4798;
+}
+
+.swiper-button-prev {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l4.2%2C4.2L8.4%2C22l17.8%2C17.8L22%2C44L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") #00a0e9 center 50%/50% 50% no-repeat;
+}
+
+.swiper-button-next {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") #00a0e9 center 50%/50% 50% no-repeat;
+}
+
+@media screen and (max-width: 668px) {
+	.button div {
+		width: 28px;
+		height: 28px;
+	}
+}	
+	
+    </style>
+</head>
+<body>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+	window.onload = function() {
+    var swiper = new Swiper('.swiper-container',{
+		autoplay:3000,
+		speed:1000,
+		autoplayDisableOnInteraction : false,
+		loop:true,
+		centeredSlides : true,
+		slidesPerView:2,
+        pagination : '.swiper-pagination',
+		paginationClickable:true,
+		prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+		onInit:function(swiper){
+			swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+			},
+        breakpoints: { 
+                668: {
+                    slidesPerView: 1,
+                 }
+            }
+		});
+		}
+    </script>
+
+					<!-- Controls -->
+					<div style="width:1140px;margin:auto">
+					<a class="left carousel-control banner-pre" href="#slider" role="button" data-slide="prev">
+					</a>
+					<a class="right carousel-control banner-next" href="#slider" role="button" data-slide="next">
+					</a>
+					</div>
+				</div>
+				
+				
+				<div class="v-nav-wrap p-wrap">
+
+					<div class="vnc-wrap vnc-wrap-course">
+						<div class="vn-cls vn-cls-course clearfix">
+							<div class="vn-a">视频分类:</div>
+							<ul class="clearfix">
+								<li ><a href="ALL.html">全部视频</a></li>
+								<li  class="active"><a href="VIP.html"">VIP视频</a></li>
+							</ul>
+						</div>
+				</div>
+				
+				<div id="content-container" class="home content-container" style="clear:both;margin-top:0px;">
+					<div class="wrap">
+						<div class="main">
+							<div class="g-lesson publicClass">
+								
+									<a href="ALL.html"><img src="img/全部视频.png" alt="全部视频"width="855"height="132"></a>
+			
+								<div class="g-wrap p-wrap">
+									<h2 class="p-title"><span></span><a href="ALL.html""> 更多视频 ></a></h2>
+									<div class="g-main clearfix">
+										<div class="g-slider">
+											<div class="gs-wrap">
+												
+												<div id="g-slider" class="carousel slide" data-ride="carousel">
+													<!-- Indicators -->
+													<ol class="carousel-indicators" style="display:none">
+																<li data-target="#g-slider" data-slide-to="0" class="active"></li>
+													</ol>
+								
+													<!-- Wrapper for slides -->
+													
+													<div class="carousel-inner" role="listbox">
+																<div class="item  item-animate active ">
+																		<a href="剧情/香蜜沉沉烬如霜.html"><img src="img/香蜜沉沉烬如霜.jpg" alt="香蜜沉沉烬如霜" class="dims">
+																	    </a>
+																	<div class="g-box-des">
+																		<h3>香蜜沉沉烬如霜</h3>
+																		<p>主演：<span>杨紫，邓伦</span></p>
+																		  <div class="g-people"><span class="gp-icon"></span><span>1174</span> 在看</div>
+																	</div>
+																</div>
+													</div>
+												</div>
+												
+												
+											</div>
+			
+										</div>
+										
+												<div class="g-box">
+													<div>
+														<a href="剧情/怦然星动.html"><img src="img/怦然星动.jpg" alt="怦然星动" class="dims" width="212" height="125">
+														</a>
+													</div>
+													<div class="g-box-des">
+														<h3>怦然星动</h3>
+														<p>主演：<span>杨幂，李易峰</span></p>
+														  <div class="g-people"><span class="gp-icon"></span><span>36303</span> 在看</div>
+													</div>
+												</div>
+												<div class="g-box">
+													<div>
+														<a href="剧情/扶摇.html"><img src="img/扶摇.jpg"" alt="扶摇" class="dims" width="212" height="125">
+														</a>
+													</div>
+													<div class="g-box-des">
+														<h3>扶摇</h3>
+														<p>主演：<span>杨幂，阮经天</span></p>
+														  <div class="g-people"><span class="gp-icon"></span><span>103125</span> 在看</div>
+													</div>
+												</div>
+												<div class="g-box">
+													<div>
+														<a href="剧情/西虹市首富.html"><img src="img/西虹市首富.jpg"" alt="西虹市首富" class="dims" width="212" height="125">
+														</a>
+													</div>
+													<div class="g-box-des">
+														<h3>西虹市首富</h3>
+														<p>主演：<span>沈腾</span></p>
+														  <div class="g-people"><span class="gp-icon"></span><span>35505</span> 在看</div>
+													</div>
+												</div>
+												<div class="g-box">
+													<div>
+														<a href="剧情/琅琊榜.html"><img src="img/琅琊榜.jpg"" alt="琅琊榜" class="dims" width="212" height="125">
+														</a>
+														</div>
+													<div class="g-box-des">
+														<h3>琅琊榜</a></h3>
+														<p>主演：<span>胡歌，吴磊</span></p>
+														  <div class="g-people"><span class="gp-icon"></span><span>74837</span> 在看</div>
+													</div>
+												</div>
+												<div class="g-box">
+													<div>
+														<a href="剧情/忽而今夏.html"><img src="img/忽而今夏.jpg" alt="忽而今夏" class="dims" width="212" height="125">
+														</a>
+													</div>
+													<div class="g-box-des">
+														<h3>忽而今夏</h3>
+														<p>主演：<span>白宇，卜冠今</span></p>
+														  <div class="g-people"><span class="gp-icon"></span><span>51910</span> 在看</div>
+													</div>
+												</div>
+												<div class="g-box">
+													<div>
+														<a href="剧情/我不是药神.html"> <img src="img/我不是药神.jpg"" alt="我不是药神" class="dims" width="212" height="125">
+														</a>
+													</div>
+													<div class="g-box-des">
+														<h3>我不是药神</h3>
+														<p>主演：<span>徐峥</span></p>
+														  <div class="g-people"><span class="gp-icon"></span><span>24846</span> 在看</div>
+													</div>
+												</div>
+			
+										
+									</div>
+								</div>
+							</div>
+			
+							<div class="v-lesson dp-vip-course vipClass">
+
+
+<script>
+	var app = {};
+	app.debug = false;
+	app.arguments = {};
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+	    // 添加动画
+        $(".g-box:nth-child(2n) ").addClass("wow fadeInUp");
+        $(".g-box:nth-child(2n+1) ").addClass("wow fadeInDown");
+	
+	  	$(".carousel-inner>.item>a>img").css({
+		    "display": "block",
+		    "max-width": "100%",
+		    "height":"292px",
+		    "line-height": "1"
+	    });
+	    
+		if (navigator.userAgent.match(/mobile/i)) {
+		 	//是移动设备
+		 	//console.log(navigator.userAgent.match(/mobile/i));
+		 	$(".gb-img img").width("100%");
+		 }
+
+	});
+	
+	// foot保持130px
+	if($("#paginator")) {
+	  $(".vip-wrap").css({"margin-bottom":"125px"});
+	} else {
+	  $(".vip-wrap").css({"margin-bottom":"98px"});
+	}
+</script>
+
+<img src="img/一起玩耍.png"width="855"height="132">
+<div class="dp-footer">
+	<div class="wrap">
+			<div class="container">
+					<div class="pull-right nav-r">
+						<p class="consult">官方QQ：1057267782</p>
+						<p class="time">服务时间：周一至周日9:00-18:00</p>
+					</div>
+				</div>
+	</div>
+	<div class="container main">
+
+		<div class="row more">
+			<div class="col-sm-2 float-l">
+				<h3>我想看</h3>
+				<ul>
+					<li>
+						<a target="_blank">香蜜精彩花絮</a>
+					</li>
+					  <li>
+						<a target="_blank" >扶摇背后的故事</a>
+					</li>
+					  <li>
+						<a target="_blank">我不是药神催泪瞬间</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-2 float-l">
+				<h3>更多了解</h3>
+				<ul>
+					  <li>
+						<a target="_blank" href="">漫画</a>
+					  </li>
+					  <li>
+						<a target="_blank" href="">小说</a>
+					</li>
+					  <li>
+						<a target="_blank" href="ALL.html">短视频</a>
+					  </li>
+				</ul>
+			</div>
+			
+			<div class="col-sm-2 float-l">
+				<h3>了解酷看</h3>
+				<ul>
+					  <li>
+						<a target="_blank" href="ABOUT US.html">酷看简介</a>
+					  </li>
+					  <li>
+						<a target="_blank"href="">媒体报道</a>
+					  </li>
+					  <li>
+						<a target="_blank"href="">用户评价</a>
+					  </li>
+				</ul>
+			</div>
+			<div class="qr-group">
+		</div>
+		
+		
+		
+	</div>
+	<div class="container">
+		<div class="f-wrap p-wrap">
+			<ul class="clearfix">
+						 <li><a href=""  target="_blank"  >加入我们</a></li>
+						 <li><a href=""  >联系我们</a></li>
+						 <li><a href="HELP.html">帮助中心</a></li>
+						 <li><a href="ABOUT US.html" >关于我们</a></li>
+			</ul>
+			<div class="copyright">
+					1057267782@qq.com　|　大学街319号太原师范学院
+				</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+
+$(function(){
+videoShow();
+
+
+
+$(".erweicode-icon").mouseover(function(){
+	$(".erweicode-code").show();
+});
+$(".erweicode-icon").mouseout(function(){
+	$(".erweicode-code").hide();
+});
+
+$(".iphone-icon").mouseover(function(){
+	$(".iphone-code").show();
+});
+$(".iphone-icon").mouseout(function(){
+	$(".iphone-code").hide();
+});
+
+
+});
+
+
+//搜索按钮
+$(".search-btn").click(function(){
+var key=$(".search_input").val();
+var url="/search/course?keyword="+key;
+location.href=url;
+});
+
+
+function  videoShow(){
+$(".g4 li").hover(function(){
+	 $(this).find(".dl-video-bg").css({
+					"transition":"height 0.3s linear",
+					 "-ms-transition":"height 0.3s linear",
+					 "-webkit-transition":"height 0.3s linear",
+					 "-o- transition":"height 0.3s linear",
+					 "display": "block",
+					 "opacity": "1",
+					 "height":"100%"
+				  });
+
+},function(){
+
+	 $(this).find(".dl-video-bg").css({
+					"transition":"height 0.3s",
+					"-ms-transition":"height 0.3s linear",
+					"-webkit-transition":"height 0.3s linear",
+					"-o-transition":"height 0.3s linear",
+					"display": "none",
+					"height":"0px",
+					"opacity": "0"
+				 });
+	  });
+};
+
+
+
+</script>
+
+
+
+
+<style>
+	.modal-backdrop,.modal-backdrop.in{
+		background-color: rgba(0,0,0,.5) !important;
+	}
+</style>
+
+<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+<div id="modal" class="modal"></div>
+<div id="nodeClosedModalByChoose" class="modal"></div>
+<div id="nodeClosedModalBySetName" class="modal"></div>
+<div id="protocol-modal" class="modal" data-url="/user/protocol/show"></div>
+
+<script src="https://resource.dapengjiaoyu.com/js/autocomplete.js"></script>
+
+
+</body>
+</html>

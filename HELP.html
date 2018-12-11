@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+     <meta property="qc:admins" content="14456225576150316375" />
+  
+     <meta property="qc:admins" content="14456225576150316375" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+    <title>帮助中心 大鹏教育-高品质的设计师在线教育</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta name="baidu-site-verification" content="V4RY5Ux1LQ" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.dapengjiaoyu.com/images/2016/01/ijjctyun.png" media="screen" />
+
+  	 <link rel="stylesheet" type="text/css" href="https://resource.dapengjiaoyu.com/dapeng/css/navController.css" />
+
+  <link href="https://resource.dapengjiaoyu.com/assets/libs/gallery2/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/assets/css/common.css" />
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/assets/css/bootstrap-extends.css" />
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/bundles/schoolweb/css/web.css" />
+
+  
+  
+  <!-- 回到顶部样式  -->
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/css/upDown.css" />
+  
+  <link rel="stylesheet" media="screen" href="https://resource.dapengjiaoyu.com/dapeng/css/dapeng.css" />
+  
+  <script src="https://resource.dapengjiaoyu.com/js/jquery.min.js"></script>
+  <script src="https://resource.dapengjiaoyu.com/js/main.js"></script>
+  
+  <!-- 回到顶部样式  -->
+  <script src="https://resource.dapengjiaoyu.com/js/JQscrollTop.js"></script>
+  <script src="https://resource.dapengjiaoyu.com/js/updown.js"></script>
+  
+  <!--[if lt IE 8]>
+    <link href="https://resource.dapengjiaoyu.com/assets/css/oldie.css" rel="stylesheet">
+  <![endif]-->
+    
+  <!--[if lt IE 9]>
+    <script src="https://resource.dapengjiaoyu.com/assets/libs/html5shiv.js"></script>
+  <![endif]-->
+
+  <!--[if IE 8]>
+	<script src="https://resource.dapengjiaoyu.com/assets/libs/respond.min.js"></script>
+  <![endif]-->
+  
+</head>
+<body class="" id="bodyColor" style="background-color:#f0f0f0;">
+
+
+
+<div class="navbar dp-nav">
+  <div class="container">
+    <div class="container-gap">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="navbar-collapse collapse dp-collapse">
+          <ul class="nav navbar-nav dp-navbar">
+	            	<li>
+		                <a onfocus="this.blur();" href="HOME PAGE.html" class="active" >
+		                  首页
+		                </a>
+		            </li>
+	            		<li id="collegeNav">
+	            			<a></a>
+	            			<ul class="nav navbar-nav dp-navbar" style="display:none">
+	            				<li></li>
+	            			</ul>
+	            		</li>
+            		<li id="mainNav" style="display:none">
+		                <a href="VIP.html">
+		                  VIP视频
+		                </a>
+		            </li>
+	            	<li>
+		                <a onfocus="this.blur();" href="ALL.html"  >
+		                  全部视频
+		                </a>
+		            </li>
+	            	<li>
+		                <a onfocus="this.blur();" href="HELP.html"  >
+		                  帮助中心
+		                </a>
+		            </li>
+	            	<li>
+		                <a onfocus="this.blur();" href="ABOUT US.html" target="_blank"   >
+		                  关于我们
+		                </a>
+		            </li>
+          </ul>
+        
+        
+					<ul class="nav navbar-nav navbar-right dp-navbar">
+							<li style="margin-top:0px;">
+							<span class="nav navbar-nav search" >
+								<input class="typehead form-control search_input" type="text" placeholder="搜索更多视频" data-role="item-input">
+							<button class="typehead-btn btn search-btn" type="submit" data-role="item-add" onfocus="this.blur();"><i class="typehead-search glyphicon glyphicon-search"></i></button>
+							</span>            
+							<li style="color: #7E7E8C;font-size: 12px;">|</li>
+								<li>
+								<a href="enter.html"">登录</a>
+								</li>
+								<li>
+											<a href="register.html"">注册</a>
+								</li>
+						</ul>              
+
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+   $(document).ready(function(){
+   	  $("#collegeNav>a").replaceWith($("#mainNav").html());
+   	  $("#collegeNav>ul>li").html($("#secondNav").html());
+	   	if("temp"!="temp"){
+	   		$("#collegeNav").parent().find("a").removeClass("active");
+	   		$("#collegeNav").find("a").addClass("active");
+	   	}
+      $("#collegeNav").mouseover(function(){
+		  $(this).children("ul").show();
+	  });
+	  $("#collegeNav").mouseout(function(){
+		  $(this).children("ul").hide();
+	  });
+      $(".typehead").click(function(){
+          $(".dp-nav .search").addClass("active");
+      });
+      
+   	  $(".typehead").blur(function(){
+          $(".dp-nav .search").removeClass("active");
+      });
+      
+      $(".typehead, .typehead-btn").hover(function(){
+		  $(".dp-nav .search").addClass("active");
+        },function(){
+		  $(".dp-nav .search").removeClass("active");
+      });
+      
+	  //搜索按钮
+	  $(".search-btn").click(function(){
+	   	var key=$(".search_input").val();
+		var url="/search/course?keyword="+key;
+		location.href=url;
+	  });
+   });
+</script>
+
+
+<div id="content-container" class="container">
+        <div class="es-row-wrap container-gap" style="border: 0px;">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header"><h1>帮助中心</h1></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" style="padding-bottom:20px;">
+            <p style="color: rgb(51, 51, 51); text-indent: 0px; font-family:;" helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="">
+	<span style="font-family:;" yahei";"="" microsoft=""></span> 
+	</p>
+<p helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="" style="white-space: normal;"><span yahei";"="" microsoft="">&nbsp; &nbsp; &nbsp;欢迎您使用酷看，酷看视频——属于自己的看视频专属频道。为了更便利的为您提供在线服务，我们将时刻倾听您的意见，为您提供良好的看视频体验，现将网校的一些常见问题做如下归纳：</span> 
+</p>
+<p helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="" style="white-space: normal;"><span yahei";"="" microsoft=""><br />
+</span> 
+</p>
+<p helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="" style="white-space: normal;"><strong>1</strong><strong>、问：请问客服工作时间是几点到几点？</strong><br />
+<strong>　 &nbsp;答</strong><span yahei";"="" microsoft="">：客服的工作时间为周一到周五的上午</span><span yahei";"="" microsoft="">&nbsp;09:00-</span><span yahei";"="" microsoft="">12:00</span><span yahei";"="" microsoft="">；下午</span><span yahei";"="" microsoft="">13:30-</span><span yahei";"="" microsoft="">18:00</span><span yahei";"="" microsoft="">学员在网络学习过程中如遇到疑难问题都可以通过联系大鹏教育在线客服来获得帮助，请广大学员注意客服工作时间以便及时获得学习帮助。</span> 
+	</p>
+<p helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="" style="white-space: normal;"><span yahei";"="" microsoft=""><br />
+</span><strong>2</strong><strong>、问：请问为什么我的在线视频一直处于缓冲状态？</strong><br />
+<strong>&nbsp;　 答</strong><span yahei";"="" microsoft="">：您好，在线课程的观看使用是需要网络环境的支持，网速流畅的环境观看自然顺畅。建议您在观看课程的同时，不要下载其它东西，不要使用内存较大的软件，关闭掉比较占用网速的东西。其次，建议您经常清理电脑里缓存文件。</span> 
+</p>
+<p helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="" style="white-space: normal;"><span yahei";"="" microsoft=""><br />
+</span><strong>3</strong><strong>、问：请问我登录后点击进入后，再点击相应的视频，页面没有什么反应，或者会出现“请您重新登录”的状态？</strong><br />
+<strong>　 答</strong><span yahei";"="" microsoft="">：您好，这种问题可能是由于您并没有成功登陆，您可以关闭掉页面重新输入网址</span><span yahei";"="" microsoft="">www.dapengjiaoyu.com</span><span yahei";"="" microsoft="">进行登陆。其次，这有可能是与您电脑本身的系统或者您使用的浏览器有关系，建议您使用其他浏览器登录便可解决。</span> 
+	</p>
+<p helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans="" style="white-space: normal;"><span yahei";"="" microsoft=""><br />
+</span><strong>4</strong><strong>、问：网络帐号和密码，都可以修改吗？</strong><br />
+<strong>　 &nbsp;答</strong><span yahei";"="" microsoft="">：您好，您的帐号就是您注册用的账号，您的密码可以修改，在成功登陆后点击“账号设置”，在“修改密码”里进行修改即可。</span><br />
+<strong>5</strong><strong>、问：在线视频可以下载观看吗？</strong><br />
+<strong>　 答</strong><span yahei";"="" microsoft="">：您好，普通视频可以下载，VIP视频需要开通VIP才能下载，若您是尊贵的酷看VIP已下载VIP视频，视频在您VIP过期后将不能观看。</span> 
+</p>
+
+<p>
+	<br />
+</p>
+<p style="color: rgb(51, 51, 51); text-indent: 0px; font-family:;" helvetica;font-size:14px;font-style:normal;font-weight:400;"="" verdana,="" tahoma,="" serif",="" sans=""><span><span style="font-family:;" yahei";"="" microsoft=""><br />
+</span><strong><span style="font-family:;" yahei";"="" microsoft=""></span></strong></span><strong><span style="font-family:;" yahei";"="" microsoft=""></span></strong><span><br />
+</span><strong><span style="font-family:;" yahei";"="" microsoft=""></span></strong><span style="font-family:;" yahei";"="" microsoft=""></span><span style="font-family:;" yahei";"="" microsoft=""></span><span style="font-family:;" yahei";"="" microsoft=""></span><span style="font-family:;" yahei";"="" microsoft=""></span><span style="font-family:;" yahei";"="" microsoft=""></span> 
+	</p>
+     </div>
+  </div>
+
+</div>
+  </div>
+  
+<script>
+	var app = {};
+	app.debug = false;
+	app.arguments = {};
+</script>  
+
+
+
+
+<img src="img/一起玩耍.png"width="855"height="132">
+<div class="dp-footer">
+	<div class="wrap">
+			<div class="container">
+					<div class="pull-right nav-r">
+						<p class="consult">官方QQ：1057267782</p>
+						<p class="time">服务时间：周一至周日9:00-18:00</p>
+					</div>
+				</div>
+	</div>
+	<div class="container main">
+
+		<div class="row more">
+			<div class="col-sm-2 float-l">
+				<h3>我想看</h3>
+				<ul>
+					<li>
+								<a target="_blank">香蜜精彩花絮</a>
+						</li>
+						<li>
+								<a target="_blank" >扶摇背后的故事</a>
+						</li>
+						<li>
+								<a target="_blank">我不是药神催泪瞬间</a>
+						</li>
+				</ul>
+			</div>
+			<div class="col-sm-2 float-l">
+				<h3>更多了解</h3>
+				<ul>
+						<li>
+								<a target="_blank" href="">漫画</a>
+							</li>
+						<li>
+								<a target="_blank" href="">小说</a>
+					</li>
+						<li>
+								<a target="_blank" href="">短视频</a>
+							</li>
+				</ul>
+			</div>
+			
+			<div class="col-sm-2 float-l">
+				<h3>了解酷看</h3>
+				<ul>
+						<li>
+								<a target="_blank" href="ABOUT US.html">酷看简介</a>
+							</li>
+						<li>
+								<a target="_blank">媒体报道</a>
+							</li>
+						<li>
+								用户评价
+							</li>
+				</ul>
+			</div>
+			<div class="qr-group">
+		</div>
+		
+		
+		
+	</div>
+	<div class="container">
+		<div class="f-wrap p-wrap">
+			<ul class="clearfix">
+						 <li><a href=""  target="_blank"  >加入我们</a></li>
+						 <li><a href=""  >联系我们</a></li>
+						 <li><a href="HELP.html">帮助中心</a></li>
+						 <li><a href="ABOUT US.html" >关于我们</a></li>
+			</ul>
+			<div class="copyright">
+					1057267782@qq.com　|　大学街319号太原师范学院
+				</div>
+
+		</div>
+	</div>
+</div>
+	
+<script>
+
+$(function(){
+videoShow();
+
+
+
+	$(".erweicode-icon").mouseover(function(){
+			$(".erweicode-code").show();
+	});
+	$(".erweicode-icon").mouseout(function(){
+			$(".erweicode-code").hide();
+	});
+	
+	$(".iphone-icon").mouseover(function(){
+			$(".iphone-code").show();
+	});
+	$(".iphone-icon").mouseout(function(){
+			$(".iphone-code").hide();
+	});
+
+
+});
+
+
+//搜索按钮
+$(".search-btn").click(function(){
+var key=$(".search_input").val();
+var url="/search/course?keyword="+key;
+location.href=url;
+});
+
+
+function  videoShow(){
+	$(".g4 li").hover(function(){
+			 $(this).find(".dl-video-bg").css({
+											"transition":"height 0.3s linear",
+											 "-ms-transition":"height 0.3s linear",
+											 "-webkit-transition":"height 0.3s linear",
+											 "-o- transition":"height 0.3s linear",
+											 "display": "block",
+											 "opacity": "1",
+											 "height":"100%"
+										});
+
+ },function(){
+
+			 $(this).find(".dl-video-bg").css({
+											"transition":"height 0.3s",
+											"-ms-transition":"height 0.3s linear",
+											"-webkit-transition":"height 0.3s linear",
+											"-o-transition":"height 0.3s linear",
+											"display": "none",
+											"height":"0px",
+											"opacity": "0"
+									 });
+		});
+};
+
+
+
+</script>
+
+
+
+
+<style>
+	.modal-backdrop,.modal-backdrop.in{
+		background-color: rgba(0,0,0,.5) !important;
+	}
+</style>
+
+<div id="login-modal" class="modal" data-url="/login/ajax"></div>
+<div id="modal" class="modal"></div>
+<div id="nodeClosedModalByChoose" class="modal"></div>
+<div id="nodeClosedModalBySetName" class="modal"></div>
+<div id="protocol-modal" class="modal" data-url="/user/protocol/show"></div>
+
+<script src="https://resource.dapengjiaoyu.com/js/autocomplete.js"></script>
+
+
+</body>
+</html>

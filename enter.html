@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>登录</title>
+    </head>
+    <body>
+        <form>
+            <p>账号：
+                <input type="text"name="userName"size="18">
+            </p>
+            <p>密码：
+                <input type="password"name="pass"size="18">
+            </p>
+            <p>
+                <input type="reset"name="reset"value="重填">
+               <a href="HOME PAGE.html"> <input type="reset"name="reset"value="确认"></a>
+            </p>
+				</form>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+        	<img src="img/一起玩耍.png"width="855"height="132">
+		<div class="dp-footer">
+			<div class="wrap">
+					<div class="container">
+							<div class="pull-right nav-r">
+								<p class="consult">官方QQ：1057267782</p>
+								<p class="time">服务时间：周一至周日9:00-18:00</p>
+							</div>
+						</div>
+			</div>
+			<div class="container main">
+	
+				<div class="row more">
+					<div class="col-sm-2 float-l">
+						<h3>我想看</h3>
+						<ul>
+							<li>
+								<a target="_blank">香蜜精彩花絮</a>
+							</li>
+							  <li>
+								<a target="_blank" >扶摇背后的故事</a>
+							</li>
+							  <li>
+								<a target="_blank">我不是药神催泪瞬间</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2 float-l">
+						<h3>更多了解</h3>
+						<ul>
+							  <li>
+								<a target="_blank" href="">漫画</a>
+							  </li>
+							  <li>
+								<a target="_blank" href="">小说</a>
+							</li>
+							  <li>
+								<a target="_blank" href="l">短视频</a>
+							  </li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-2 float-l">
+						<h3>了解酷看</h3>
+						<ul>
+							  <li>
+								<a target="_blank" href="ABOUT US.html">酷看简介</a>
+							  </li>
+							  <li>
+								<a target="_blank">媒体报道</a>
+							  </li>
+							  <li>
+								用户评价
+							  </li>
+						</ul>
+					</div>
+					<div class="qr-group">
+				</div>
+				
+				
+				
+			</div>
+			<div class="container">
+				<div class="f-wrap p-wrap">
+					<ul class="clearfix">
+								 <li><a href="">加入我们</a></li>
+								 <li><a href="">联系我们</a></li>
+								 <li><a href="HELP.html">帮助中心</a></li>
+								 <li><a href="ABOUT US.html" >关于我们</a></li>
+					</ul>
+					<div class="copyright">
+							1057267782@qq.com　|　大学街319号太原师范学院
+						</div>
+		
+				</div>
+			</div>
+		</div>
+		
+	  <script>
+	
+	$(function(){
+		videoShow();
+	
+		
+		
+		$(".erweicode-icon").mouseover(function(){
+			$(".erweicode-code").show();
+		});
+		$(".erweicode-icon").mouseout(function(){
+			$(".erweicode-code").hide();
+		});
+		
+		$(".iphone-icon").mouseover(function(){
+			$(".iphone-code").show();
+		});
+		$(".iphone-icon").mouseout(function(){
+			$(".iphone-code").hide();
+		});
+	
+		
+	});
+	
+	
+	//搜索按钮
+	$(".search-btn").click(function(){
+		var key=$(".search_input").val();
+		var url="/search/course?keyword="+key;
+		location.href=url;
+	});
+	
+	
+	function  videoShow(){
+		$(".g4 li").hover(function(){
+			 $(this).find(".dl-video-bg").css({
+							"transition":"height 0.3s linear",
+							 "-ms-transition":"height 0.3s linear",
+							 "-webkit-transition":"height 0.3s linear",
+							 "-o- transition":"height 0.3s linear",
+							 "display": "block",
+							 "opacity": "1",
+							 "height":"100%"
+						  });
+	
+	   },function(){
+	
+			 $(this).find(".dl-video-bg").css({
+							"transition":"height 0.3s",
+							"-ms-transition":"height 0.3s linear",
+							"-webkit-transition":"height 0.3s linear",
+							"-o-transition":"height 0.3s linear",
+							"display": "none",
+							"height":"0px",
+							"opacity": "0"
+						 });
+			  });
+	  };
+	
+	
+	
+	</script>
+	  
+	  
+	  
+		
+		<style>
+			.modal-backdrop,.modal-backdrop.in{
+				background-color: rgba(0,0,0,.5) !important;
+			}
+		</style>
+		
+	  <div id="login-modal" class="modal" data-url="/login/ajax"></div>
+	  <div id="modal" class="modal"></div>
+	  <div id="nodeClosedModalByChoose" class="modal"></div>
+	  <div id="nodeClosedModalBySetName" class="modal"></div>
+	  <div id="protocol-modal" class="modal" data-url="/user/protocol/show"></div>
+	
+	  <script src="https://resource.dapengjiaoyu.com/js/autocomplete.js"></script>
+	
+	 
+	  </body>
+	</html>
+	
+	
+	<div class="float_div">
+					<p>官方咨询QQ：1057267782
+					</p>
+					<p>官方投诉QQ：1057267782</p>
+					<div class="fl_div_b">
+						<p>
+						服务时间：</br>周一至周日9:00~18:00
+						</p>
+					</div>
+				</div>
+    </body>
+</html>
